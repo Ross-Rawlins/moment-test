@@ -1,0 +1,12 @@
+<ion-img [src]="nft.thumbnailURI"></ion-img>
+<div class="nftFooterContainer">
+    <div class="footerItem"><ion-chip>
+        <ion-label>${{nft.minPrice}} - ${{nft.maxPrice}}</ion-label>
+    </ion-chip>
+        <ion-chip>
+            <ion-label>{{(nft.editionsDataLength - nft.remaining)}} / {{nft.editionsDataLength}}</ion-label>
+        </ion-chip></div>
+    <div class="footer"><ion-icon name="checkmark-circle-outline" [color]="nft.creator.verified? 'primary':'light'"></ion-icon>
+        <ion-icon [name]="nft.unlockableContent?'lock-closed-outline':'lock-open-outline'"></ion-icon></div>
+
+</div>
