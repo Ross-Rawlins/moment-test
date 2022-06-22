@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {NftsFilterComponent} from "./components/nfts-filter/nfts-filter.component";
-import {ModalController} from "@ionic/angular";
 
 @Component({
   selector: 'app-discover',
@@ -9,14 +7,11 @@ import {ModalController} from "@ionic/angular";
 })
 export class DiscoverPage implements OnInit {
 
-  constructor(private modalCtrl: ModalController) { }
+  constructor() { }
 
   ngOnInit() {
   }
 
-  public openFilter()
-  {
-    this.modalCtrl.create({component:NftsFilterComponent})
-  }
+
 
 }

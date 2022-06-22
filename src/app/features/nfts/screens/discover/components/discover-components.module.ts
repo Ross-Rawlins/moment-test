@@ -8,9 +8,10 @@ import {IonicModule} from "@ionic/angular";
 @NgModule({
   declarations: [NftsListComponent,NftsItemComponent,NftsFilterComponent],
   exports:[NftsListComponent,NftsItemComponent,NftsFilterComponent],
+  entryComponents:[NftsFilterComponent],
   imports: [
     CommonModule,
     IonicModule
   ]
 })
-export class NftsComponentsModule { }
+export class DiscoverComponentsModule { }

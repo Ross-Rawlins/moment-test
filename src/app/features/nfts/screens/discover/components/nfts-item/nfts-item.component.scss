@@ -1,18 +1,18 @@
 :host{
-  display:block;
-  width:100%;
-  height:100%;
+
   ion-img{
-    object-fit: cover;
-    width:100%;
-    height:calc(100% - 40px);
+object-fit: cover;
+    height:calc(100% - 30px);
+    border-radius:16px;
+    overflow: hidden;
+    margin-bottom:8px
   }
   .nftFooterContainer
   {
     display:flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     .footerItem{
       ion-chip
       {

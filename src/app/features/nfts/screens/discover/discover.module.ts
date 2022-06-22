@@ -7,20 +7,18 @@ import { IonicModule } from '@ionic/angular';
 import { DiscoverPageRoutingModule } from './discover-routing.module';
 
 import { DiscoverPage } from './discover.page';
-import {HttpClientModule} from "@angular/common/http";
-import {NftsComponentsModule} from "./components/nfts-components.module";
-import {NFTsService} from "../../services/nfts/nfts.service";
+import {DiscoverComponentsModule} from "./components/discover-components.module";
+import {DiscoverDirectivesModule} from "./directives/discover-directives.module";
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    NftsComponentsModule,
+    DiscoverComponentsModule,
     DiscoverPageRoutingModule,
-    HttpClientModule,
+    DiscoverDirectivesModule
   ],
   declarations: [DiscoverPage],
-  providers:[NFTsService]
 })
 export class DiscoverPageModule {}

@@ -1,3 +1,20 @@
-<p>
-  nfts-filter works!
-</p>
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title color="primary">Filter by Category</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="cancel()" ><ion-icon name="chevron-down"></ion-icon></ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="ion-padding">
+  <ion-list>
+    <ion-chip *ngFor="let item of categories$ | async" (click)="toggleTag(item.tagId)" color="primary" [outline]="!selectedCategories.includes(item.tagId)">{{item.name}}</ion-chip>
+  </ion-list>
+
+</ion-content>
+<ion-footer>
+  <ion-button color="light" expand="block" *ngIf="selectedCategories.length >= 1" (click)="clearSelectedCategories()">Clear Filters</ion-button>
+      <ion-button color="primary" expand="block" (click)="applyFilters()">Apply Filters</ion-button>
+
+</ion-footer>
