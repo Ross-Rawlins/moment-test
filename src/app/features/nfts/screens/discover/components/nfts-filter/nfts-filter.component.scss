@@ -1,7 +1,47 @@
-::ng-deep{
- .modal-default
+:host
+{
+ ion-header
  {
-
+  background:transparent;
+  ion-title
+  {
+   font-size:35px;
+   color:#fff;
+  }
+ }
+ion-list{
+ background: none;
+ ion-chip
+ {
+  ont-size: 14px;
+  padding: 20px;
+  height: 40px;
+  border-radius: 40px;
+  border: 3px solid #b57bfe;
+  font-weight: bold;
 
  }
 }
+ ion-button
+ {
+&.clearFilters{
+ height:55px;
+ --background: transparent;
+ color:#fff;
+}
+  &.applyFilters
+  {
+   height:55px;
+   color:#fff !important;
+   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b57bfe+0,7b64e8+100 */
+   --background: #b57bfe; /* Old browsers */
+   --background: -moz-linear-gradient(top,  #b57bfe 0%, #7b64e8 100%); /* FF3.6-15 */
+   --background: -webkit-linear-gradient(top,  #b57bfe 0%,#7b64e8 100%); /* Chrome10-25,Safari5.1-6 */
+   --background: linear-gradient(to bottom,  #b57bfe 0%,#7b64e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b57bfe', endColorstr='#7b64e8',GradientType=0 ); /* IE6-9 */
+  }
+ }
+
+}
+
+

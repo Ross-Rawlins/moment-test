@@ -109,4 +109,11 @@
     --ion-toolbar-border-color: var(--ion-color-step-250);
   }
 
+  ion-modal
+  {
+    backdrop-filter: blur(10px);
+    --background:transparent;
+    --ion-background-color: transparent;
+  }
+
 }
